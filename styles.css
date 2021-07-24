@@ -43,3 +43,38 @@ li a:hover{
 h1{
     font-size: 1.2em;
 }
+
+#barre-recherche{
+    border: 1px #f2f2f2 solid;
+    border-radius: 15px;
+    width: 410px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+#icone-map{
+    padding: 15px 18px 15px 18px;
+    background-color: #f2f2f2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#recherche{
+    border: none;
+    width: 218px;
+    height: 43px;
+    padding-left: 10px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#bouton-rechercher{
+    text-decoration: none;
+    background-color: #0065fc;
+    color: white;
+    font-weight: 500;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 15px 15px 15px 15px;
+}

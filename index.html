@@ -9,6 +9,9 @@
         <title>Reservia - Hébergements et activités</title>
     </head>
     <body>
+    
+<!-- Création du header -->
+
         <header>
             <div id="header">
                 <img src="./images/logo/Reservia@3x.png" alt="logo">
@@ -20,14 +23,21 @@
                     </ul>
                 </nav>
             </div>
-        
-        <section id="recherches">
-            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-        </section>
-            <div id="barre-recherche">
-                
-            </div>
         </header>
+
+<!-- Création de la section de recherches -->
+
+        <section id="recherches">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <div id="barre-recherche">    
+                <form method="post" action="traitement.php" >
+                    <label for="recherche"><i id="icone-map" class="fas fa-map-marker-alt"></i></label>
+                    <input type="text" name="recherche" id="recherche" placeholder="Marseille, France"/>
+                    <a href="" id="bouton-rechercher">Rechercher</a>
+                </form>
+            </div>
+        </section>
+       
     </body>
 </html>
