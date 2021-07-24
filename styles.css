@@ -1,5 +1,6 @@
 body{
-    margin: 0;
+    font-family: "Raleway", sans-serif;
+    margin: 0 40px 0 40px;
 }
 
 #header{
@@ -8,9 +9,11 @@ body{
     align-items: center;
 }
 
+/*Mise en forme du Header*/
+
 #header img{
     height: 35px;
-    margin: 20px 0 20px 30px;
+    margin: 20px 0 20px 0;
 }
 
 nav ul{
@@ -18,10 +21,26 @@ nav ul{
     list-style: none;
 }
 
-li{
-    margin: 0 20px 0 10px;
+li a{
+    margin: 20px 10px 0 40px;
+    text-decoration: none;
+    color: black;
+    padding-top: 26px;
 }
 
-li #hébergements{
-    color: #0065FC
+li a:hover{
+    color: #0065fc;
+    border-top: 2px #0065fc solid;
+}
+
+#inscrire{
+    color: #0065fc;
+    font-weight: 600;
+}
+
+/* Mise en forme de la section Recherches*/
+
+h1{
+    font-size: 1.2em;
+    height: 16px;
 }
