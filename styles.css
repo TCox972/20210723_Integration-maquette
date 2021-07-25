@@ -1,6 +1,10 @@
 body{
-    margin: 0;
+    font-family: "Raleway", sans-serif;
+    margin: 0 40px 0 40px;
 }
+
+
+/*Mise en forme du Header*/
 
 #header{
     display: flex;
@@ -9,8 +13,8 @@ body{
 }
 
 #header img{
-    height: 35px;
-    margin: 20px 0 20px 30px;
+    height: 40px;
+    margin: 30px 0 20px 0;
 }
 
 nav ul{
@@ -18,10 +22,132 @@ nav ul{
     list-style: none;
 }
 
-li{
-    margin: 0 20px 0 10px;
+li a{
+    
+    padding: 36px 30px 0px 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
 }
 
-li #hébergements{
-    color: #0065FC
+li a:hover{
+    color: #0065fc;
+    border-top: 2px #0065fc solid;
+}
+
+#inscrire{
+    color: #0065fc;
+    font-weight: 600;
+}
+
+/* Mise en forme de la section Recherches*/
+
+h1{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#recherches p{
+    font-size: 0.9em;
+    margin-top: 0;
+}
+
+
+#barre-recherche{
+    border: 1px #f2f2f2 solid;
+    border-radius: 15px;
+    width: 365px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#icone-map{
+    padding: 15px 16px 15px 16px;
+    background-color: #f2f2f2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#zone-recherche{
+    border: none;
+    width: 185px;
+    height: 42px;
+    padding-left: 10px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#barre-recherche a{
+    text-decoration: none;
+    background-color: #0065fc;
+    color: white;
+    font-weight: 500;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 14px 15px 13px 15px;
+}
+
+/* Mise en forme de la zone filtre */
+
+#zone-filtres{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-top: 30px;
+    justify-content: space-between;
+    width: 70%;
+}
+
+h2{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.filtres{
+    border: 2px #f2f2f2 solid;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    padding-right: 18px;
+    
+}
+
+.filtres:hover{
+    box-shadow: 2px 5px 5px #deebff ;
+}
+
+.filtres i{
+    margin-right: 12px;
+    background-color: #deebff;
+    color: #0065fc;
+    padding: 12px 13px 12px 13px;
+    border-radius: 30px;
+}
+
+/* Mise en forme de la phrase d'infos */
+
+#infos{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#infos p{
+    margin: 0;
+}
+
+#infos i{
+    color: #0065fc;
+    background-color: white;
+    border: 2px #f2f2f2 solid;
+    margin-right: 10px;
+    padding: 4px 8px 4px 8px;
+    border-radius: 30px;
 }
