@@ -1,3 +1,5 @@
+            /* Généralités sur la page */
+
 body{
     font-family: "Raleway", sans-serif;
     width: 95%;
@@ -5,8 +7,26 @@ body{
     height: auto;
 }
 
+em{
+    font-weight: bold;
+    font-style: normal;
+}
 
-/*Mise en forme du Header*/
+h1{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+section{
+    width: 95%;
+    margin: auto;
+    border: 3px black solid;
+}
+
+
+
+            /*Mise en forme du Header*/
 
 #header{
     display: flex;
@@ -50,6 +70,9 @@ li a{
 #inscrire a{
     color: #0065fc;
 }
+
+
+            /* Mise en page du header pour les mobiles */
 
 @media screen and (max-width : 768px) {
     body{
@@ -119,17 +142,10 @@ li a{
   #inscrire a{
       color: #0065fc;
   }
-
-
 }
 
-/* Mise en forme de la section Recherches*/
 
-h1{
-    font-size: 1.2em;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
+            /* Mise en forme de la fonction Recherche*/
 
 #recherches p{
     font-size: 0.9em;
@@ -193,12 +209,10 @@ h1{
     color: #d1cfcff5;
 }
 
-@media screen and (max-width : 768px) {
 
-    #recherches{
-        width: 90%;
-        margin: auto;
-    }
+            /* Mise en forme de la section Recherche - mobile */
+
+@media screen and (max-width : 768px) {
 
     h1{
         display: flex;
@@ -256,7 +270,8 @@ h1{
     }
 }
 
-/* Mise en forme de la zone filtre */
+
+            /* Mise en forme de la zone filtre */
 
 #zone-filtres{
     display: flex;
@@ -303,6 +318,10 @@ h2{
     padding: 12px 13px 12px 13px;
     border-radius: 30px;
 }
+
+
+            /* Mise en forme de la zone filtre - mobile */
+
 @media screen and (max-width : 768px) {
     #zone-filtres{
         display: flex;
@@ -337,7 +356,7 @@ h2{
     }
 }
 
-/* Mise en forme de la phrase d'infos */
+            /* Mise en forme de la phrase d'infos */
 
 #infos{
     margin-top: 30px;
@@ -349,7 +368,7 @@ h2{
     margin: 0;
 }
 
-#infos i{
+#icone-info{
     color: #0065fc;
     background-color: white;
     border: 2px #f2f2f2 solid;
@@ -358,6 +377,151 @@ h2{
     border-radius: 30px;
 }
 
+#icone-infoxl{
+    display: none;
+}
+
+
+            /* Mise en forme de la phrase d'infos */
+
 @media screen and (max-width : 768px){
+    #infos{
+        position: relative;
+        padding-top: 6px;
+        margin-top: 20px;
+    }
+
+    #infos p{
+        margin-left: 50px;
+    }
+
+    #icone-info{
+        display: none;
+    }
+
+    #icone-infoxl{
+        display: unset;
+        position: absolute;
+        color: #0065fc;
+        border: 2px #f2f2f2 solid;
+        padding: 7px 11px 7px 11px;
+        border-radius: 200px;
+        top: 0px;
+        left: 5px;
+    }
+}
+
+            /* Mise en forme de la section Hébergements */
+
+#hebergements{
+    display: flex;
+}
+
+.titre-hebergement{
+    margin-bottom: 3px;
+}
+
+#resultats-recherches{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 15px 0px 30px 30px;
+}
+
+#plus{
+    font-weight: 600;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.rangee-resultat{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+
+.carte-img{
+    width: 200px;
+    height: 95px;
+    border-radius: 13px 13px 0 0;
+    object-fit: cover;
+    object-position: 50% 55%;
+}
+
+h3{
+    font-size: 0.8em;
+    margin: 8px 10px 5px 10px;
+}
+
+.logement p{
+    font-size: 0.8em;
+    margin: 0 10px 4px 10px;
+}
+
+.logement ul{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+.logement li{
+    list-style: none;
+    padding-right: 1px;
+}
+
+.fa-star{
+    color: #0065fc;
+}
+
+.fa-star.grey{
+    color: #f2f2f2;
+}
+
+.logement{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 18px;
+    padding: 4px;
+    margin-right: 30px;
+    box-shadow: 1px 1px 8px rgb(172, 169, 169);
     
+}
+
+            /* Mise en forme du aside  */
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
+
+#titre-populaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#colonne-populaire{
+    display: flex;
+    flex-direction: column;
+}
+
+.carte-populaire{
+    width: 110px;
+    height: 120px;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+#courbe{
+    margin-top: 10px;
 }
