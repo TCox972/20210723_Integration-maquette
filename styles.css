@@ -2,7 +2,7 @@
 
 body{
     font-family: "Raleway", sans-serif;
-    width: 95%;
+    width: 92%;
     margin: auto;
     height: auto;
 }
@@ -19,9 +19,8 @@ h1{
 }
 
 section{
-    width: 95%;
+    width: 100%;
     margin: auto;
-    border: 3px black solid;
 }
 
 
@@ -362,6 +361,7 @@ h2{
     margin-top: 30px;
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 #infos p{
@@ -415,6 +415,7 @@ h2{
 
 #hebergements{
     display: flex;
+    justify-content: space-between;
 }
 
 .titre-hebergement{
@@ -431,7 +432,7 @@ h2{
 
 #plus{
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 27px;
     text-decoration: none;
     color: black;
 }
@@ -501,6 +502,9 @@ h3{
 aside{
     display: flex;
     flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 15px 30px 1px 30px;
 }
 
 #titre-populaire{
@@ -512,16 +516,47 @@ aside{
 #colonne-populaire{
     display: flex;
     flex-direction: column;
+    margin-top: 18px;
 }
 
 .carte-populaire{
     width: 110px;
     height: 120px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 13px 0 0 13px;
     object-fit: cover;
     object-position: 50% 50%;
 }
 
+.logement-populaire ul{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 45px;
+    margin-bottom: 0;
+}
+
+.logement-populaire li{
+    list-style: none;
+    padding-right: 1px;
+}
+
 #courbe{
-    margin-top: 10px;
+    margin-top: 15px;
+}
+
+.logement-populaire{
+    width: 330px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    background-color: white;
+    padding: 4px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 8px rgb(172, 169, 169);
+}
+
+.logement-populaire p{
+    font-size: 0.8em;
+    margin: 8px 10px 4px 10px;
+    overflow-wrap: normal;
 }
