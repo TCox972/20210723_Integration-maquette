@@ -1,10 +1,30 @@
+            /* Généralités sur la page */
+
 body{
     font-family: "Raleway", sans-serif;
-    margin: 0 40px 0 40px;
+    width: 92%;
+    margin: auto;
+    height: auto;
+}
+
+em{
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+section{
+    width: 100%;
+    margin: auto;
 }
 
 
-/*Mise en forme du Header*/
+            /*Mise en forme du Header*/
 
 #header{
     display: flex;
@@ -22,6 +42,11 @@ nav ul{
     list-style: none;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+}
+
 li a{
     
     padding: 36px 30px 0px 30px;
@@ -30,23 +55,103 @@ li a{
     font-size: 0.9em;
 }
 
-li a:hover{
+.menu:hover{
     color: #0065fc;
     border-top: 2px #0065fc solid;
 }
 
 #inscrire{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#inscrire a{
     color: #0065fc;
-    font-weight: 600;
 }
 
-/* Mise en forme de la section Recherches*/
 
-h1{
-    font-size: 1.2em;
-    font-weight: 600;
-    margin-bottom: 8px;
+            /* Mise en page du header pour les mobiles */
+
+@media screen and (max-width : 768px) {
+    body{
+        width: auto;
+    }
+  
+    #header{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: auto;
+      margin: 0;
+      padding: 0;
+  }
+
+  #header img{
+      margin: 25px 0 0 20px;
+      height: 65px;
+  }
+
+  nav{
+      width: 100%;
+      margin-top: 22px;
+  }
+
+  nav ul{
+      width: 100%;
+      height: 50px;
+      padding: 0;
+  }
+
+  nav li{
+      width: 100%;
+      height: 50px;
+      border-bottom: 4px #f2f2f2 solid;
+  }
+
+  nav li:hover{
+    border-bottom: 4px #0065fc solid;
+  }
+
+  .menu{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding: 8px 0 0 0;
+      margin: 0;
+      font-size: 1.3em;
+  }
+
+  .menu:hover{
+      border-top: none;
+  }
+
+
+  #inscrire{
+      position: absolute;
+      width: auto;
+      top : 50px;
+      right: 0px;
+      font-size: 1.4em;
+      border-bottom: none;
+      
+  }
+
+  #inscrire a{
+      color: #0065fc;
+  }
 }
+
+
+            /* Mise en forme de la fonction Recherche*/
+
+@media screen and (max-width : 768px) {
+    #recherches{
+        width: 90%;
+        margin: auto;
+    }
+}
+
 
 #recherches p{
     font-size: 0.9em;
@@ -55,6 +160,9 @@ h1{
 
 
 #barre-recherche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px #f2f2f2 solid;
     border-radius: 15px;
     width: 365px;
@@ -67,8 +175,12 @@ h1{
 #icone-map{
     padding: 15px 16px 15px 16px;
     background-color: #f2f2f2;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+#grande-icone-map{
+    display: none;
 }
 
 #zone-recherche{
@@ -80,7 +192,7 @@ h1{
     font-weight: 500;
 }
 
-#barre-recherche a{
+#bouton-rechercher{
     text-decoration: none;
     background-color: #0065fc;
     color: white;
@@ -90,21 +202,96 @@ h1{
     padding: 14px 15px 13px 15px;
 }
 
-/* Mise en forme de la zone filtre */
+#icone-rechercher{
+    display: none;
+}
+
+#zone-recherche:focus{
+    outline: none;
+}
+
+#zone-recherche::placeholder{
+    font-weight: 300;
+    color: #d1cfcff5;
+}
+
+
+            /* Mise en forme de la section Recherche - mobile */
+
+@media screen and (max-width : 768px) {
+
+    h1{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-top: 33px;
+    }
+
+    #recherches p{
+        font-size: 1.3em;
+        margin-top: 20px;
+    }
+
+    #barre-recherche{
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 64px;
+        width: 448px;
+        border-top: 2px #f2f2f2 solid;
+        border-bottom: 2px #f2f2f2 solid;
+        border-radius: 20px;
+    }
+
+    #icone-map{
+        display: none;
+    }
+
+    #grande-icone-map{
+        display: unset;
+        background-color: #f2f2f2;
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px;
+        padding: 23px 23px 21px 23px;
+    }
+
+    #bouton-rechercher{
+        display: none;
+    }
+
+    #icone-rechercher{
+        display: unset;
+        background-color: #0065fc;
+        color: white;
+        padding: 26px 24px 22px 24px;
+        border-radius: 20px;
+
+    }
+
+    #zone-recherche{
+        width: 298px;
+        height: 58px;
+        font-size: 1.4em;
+    }
+}
+
+
+            /* Mise en forme de la zone filtre */
 
 #zone-filtres{
     display: flex;
     align-items: center;
-    height: 40px;
     margin-top: 30px;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: flex-start;
 }
 
 h2{
     font-size: 1em;
     font-weight: 600;
 }
+
+
 
 .filtres{
     border: 2px #f2f2f2 solid;
@@ -116,11 +303,18 @@ h2{
     font-size: 1em;
     font-weight: 600;
     padding-right: 18px;
+    margin-right: 20px;
     
 }
 
+#filtres{
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+}
+
 .filtres:hover{
-    box-shadow: 2px 5px 5px #deebff ;
+    box-shadow: 2px 2px 8px #deebff ;
 }
 
 .filtres i{
@@ -131,23 +325,371 @@ h2{
     border-radius: 30px;
 }
 
-/* Mise en forme de la phrase d'infos */
+
+            /* Mise en forme de la zone filtre - mobile */
+
+@media screen and (max-width : 768px) {
+    #zone-filtres{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h2{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    #filtres{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+
+    .filtres{
+        margin-bottom: 20px;
+        height: 60px;
+        border: 3px #f2f2f2 solid;
+        font-size: 1.4em;
+        border-radius: 40px;
+        border-left: none;
+        padding-right: 23px;
+    }
+
+    .filtres i{
+        padding: 22px;
+        border-radius: 40px;
+    }
+}
+
+            /* Mise en forme de la phrase d'infos */
 
 #infos{
     margin-top: 30px;
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 #infos p{
     margin: 0;
 }
 
-#infos i{
+#icone-info{
     color: #0065fc;
     background-color: white;
     border: 2px #f2f2f2 solid;
-    margin-right: 10px;
+    margin-right: 12px;
     padding: 4px 8px 4px 8px;
     border-radius: 30px;
+}
+
+#icone-infoxl{
+    display: none;
+}
+
+
+            /* Mise en forme de la phrase d'infos */
+
+@media screen and (max-width : 768px){
+    #infos{
+        position: relative;
+        padding-top: 6px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    #infos p{
+        margin-left: 50px;
+    }
+
+    #icone-info{
+        display: none;
+    }
+
+    #icone-infoxl{
+        display: unset;
+        position: absolute;
+        color: #0065fc;
+        border: 2px #f2f2f2 solid;
+        padding: 7px 11px 7px 11px;
+        border-radius: 200px;
+        top: 0px;
+        left: 5px;
+    }
+}
+
+            /* Mise en forme de la section Hébergements */
+
+#hebergements{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titre-hebergement{
+    margin-bottom: 3px;
+}
+
+#resultats-recherches{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 15px 0px 30px 30px;
+}
+
+#plus{
+    font-weight: 600;
+    margin-top: 27px;
+    text-decoration: none;
+    color: black;
+}
+
+.rangee-resultat{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+
+.carte-img{
+    width: 200px;
+    height: 95px;
+    border-radius: 13px 13px 0 0;
+    object-fit: cover;
+    object-position: 50% 55%;
+}
+
+h3{
+    font-size: 0.8em;
+    margin: 8px 10px 5px 10px;
+}
+
+.logement p{
+    font-size: 0.8em;
+    margin: 0 10px 4px 10px;
+}
+
+.logement ul{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+.logement li{
+    list-style: none;
+    padding-right: 1px;
+}
+
+.fa-star{
+    color: #0065fc;
+}
+
+.fa-star.grey{
+    color: #f2f2f2;
+}
+
+.logement{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 18px;
+    padding: 4px;
+    margin-right: 30px;
+    box-shadow: 1px 1px 8px rgb(172, 169, 169);
+    
+}
+
+
+            /* Mise en forme du aside  */
+
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 15px 30px 1px 30px;
+}
+
+#titre-populaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#courbe{
+    margin-top: 15px;
+}
+
+#colonne-populaire{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+.logement-populaire{
+    width: 330px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    background-color: white;
+    padding: 4px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 8px rgb(172, 169, 169);
+}
+
+.carte-populaire{
+    width: 110px;
+    height: 120px;
+    border-radius: 13px 0 0 13px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.description-populaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logement-populaire h3{
+    padding-left: 10px;
+}
+
+.logement-populaire p{
+    font-size: 0.8em;
+    margin: 0px 10px 25px 20px;
+    overflow-wrap: normal;
+}
+
+.logement-populaire ul{
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.logement-populaire li{
+    list-style: none;
+    padding-right: 1px;
+}
+
+
+/* Mise en forme du Aside mobile
+La premiere instruction permet l'inversion du aside et de l'article */
+
+@media screen and (max-width : 768px) {
+    #hebergements{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    aside{
+        border-radius: 0;
+        padding-bottom: 25px;
+    }
+
+    #titre-populaire{
+        margin-top: 6px;
+        margin-bottom: 15px;
+    }
+
+    #courbe{
+        font-size: 2em;
+        margin-top: 20px;
+    }
+
+    .logement-populaire{
+        width: 98%;
+        height: 175px;
+        display: flex;
+        align-items: center;
+        padding: 6px;
+        margin-bottom: 20px;
+    }
+
+    .carte-populaire{
+    width: 37%;
+    height: 100%;
+    border-radius: 13px 0 0 13px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    }
+
+    .description-populaire{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logement-populaire h3{
+        font-size: 1.4em;
+    }
+
+    .logement-populaire p{
+        font-size: 1.1em;
+    }
+
+    .logement-populaire i{
+        font-size: 1.2em;
+        padding-top: 20px;
+    }
+}
+
+/* Mise en forme del'article Hebergements */
+
+@media screen and (max-width : 768px) {
+    #resultats-recherches{
+        background-color: white;
+    }
+
+    .titre-hebergement{
+        margin-bottom: 30px;
+    }
+
+    .rangee-resultat{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-top: 0;
+        justify-content: space-between;
+    }
+
+    .logement{
+        margin-bottom: 20px;
+        height: 250px;
+        padding: 6px;
+    }
+
+    .carte-img{
+        width: 100%;
+        height: 150px;
+
+    }
+
+    .logement h3{
+        font-size: 1.4em;
+    }
+
+    .logement p{
+        font-size: 1.1em;
+    }
+
+    .logement i{
+        font-size: 1.3em;
+        padding-top: 10px;
+    }
+
+    #plus{
+        font-size: 1.5em;
+        font-weight: 700
+        ;
+    }
+
 }
