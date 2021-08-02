@@ -2,9 +2,8 @@
 
 body{
     font-family: "Raleway", sans-serif;
-    width: 92%;
+    width: 100%;
     margin: auto;
-    height: auto;
 }
 
 em{
@@ -19,12 +18,23 @@ h1{
 }
 
 section{
-    width: 100%;
+    width: 92%;
     margin: auto;
+}
+
+@media screen and (max-width:768px) {
+    section{
+        width: 100%;
+    }
 }
 
 
             /*Mise en forme du Header*/
+
+header{
+    width: 92%;
+    margin: auto;
+}
 
 #header{
     display: flex;
@@ -73,10 +83,11 @@ li a{
             /* Mise en page du header pour les mobiles */
 
 @media screen and (max-width : 768px) {
-    body{
-        width: auto;
+   
+    header{
+        width: 100%;
     }
-  
+
     #header{
       display: flex;
       flex-direction: column;
@@ -86,7 +97,7 @@ li a{
       padding: 0;
   }
 
-  #header img{
+    #header img{
       margin: 25px 0 0 20px;
       height: 65px;
   }
@@ -241,7 +252,7 @@ li a{
         margin-right: auto;
         margin-left: auto;
         height: 64px;
-        width: 366px;
+        width: 368px;
         border-top: 2px #f2f2f2 solid;
         border-bottom: 2px #f2f2f2 solid;
         border-radius: 20px;
@@ -699,6 +710,7 @@ La premiere instruction permet l'inversion du aside et de l'article */
 
 #activites{
     margin-top: 30px;
+    margin-bottom: 55px;
 }
 
 #resultats-activites h1{
@@ -726,6 +738,8 @@ La premiere instruction permet l'inversion du aside et de l'article */
     flex-direction: column;
     border-radius: 15px;
     box-shadow: 1px 2px 5px #d1cfcff5;
+    text-decoration: none;
+    color: black;
 }
 
 .contenu-demi h3{
@@ -753,11 +767,15 @@ La premiere instruction permet l'inversion du aside et de l'article */
     flex-direction: column;
     border-radius: 15px;
     box-shadow: 1px 2px 5px #d1cfcff5;
+    text-decoration: none;
+    color: black;
 }
 
 .contenu-solo h3{
     margin: 15px;
 }
+/* Mise en forme de la section Activités pour mobile */
+
 
 @media screen and (max-width: 768px) {
     #activites{
@@ -798,13 +816,51 @@ La premiere instruction permet l'inversion du aside et de l'article */
 
     .contenu-demi{
         margin-bottom: 30px;
-        text-decoration: none;
-        color: black;
     }
 
     .contenu-solo{
         margin-bottom: 30px;
-        text-decoration: none;
-        color: black;
+    }
+}
+
+/* Mise en forme du footer */
+
+footer{
+    background-color: #f2f2f2;
+    padding: 30px 0 50px 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.titre-footer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 220px;
+}
+
+.titre-footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+@media screen and (max-width : 768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0 30px 40px;
+    }
+
+    .titre-footer{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .titre-footer a{
+        font-size: 1.2em;
+        margin-bottom: 13px;
     }
 }
