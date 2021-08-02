@@ -165,7 +165,7 @@ li a{
     align-items: center;
     border: 1px #f2f2f2 solid;
     border-radius: 15px;
-    width: 365px;
+    width: 366px;
     height: 45px;
     display: flex;
     align-items: center;
@@ -234,14 +234,18 @@ li a{
     }
 
     #barre-recherche{
+        display: flex;
+        justify-content:  center;
+        align-self: center;
         margin-top: 50px;
         margin-right: auto;
         margin-left: auto;
         height: 64px;
-        width: 448px;
+        width: 366px;
         border-top: 2px #f2f2f2 solid;
         border-bottom: 2px #f2f2f2 solid;
         border-radius: 20px;
+        border-top-width: ;
     }
 
     #icone-map{
@@ -270,7 +274,7 @@ li a{
     }
 
     #zone-recherche{
-        width: 298px;
+        width: 216px;
         height: 58px;
         font-size: 1.4em;
     }
@@ -688,8 +692,68 @@ La premiere instruction permet l'inversion du aside et de l'article */
 
     #plus{
         font-size: 1.5em;
-        font-weight: 700
-        ;
+        font-weight: 700;
     }
+}
 
+/* Mise en forme de la section Activités */
+
+#activites{
+    margin-top: 30px;
+}
+
+#resultats-activites h1{
+    margin-bottom: 20px;
+}
+
+#resultats-activites{
+    display: flex;
+    flex-direction: column;
+}
+
+#contenus{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenu-double{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenu-demi{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px #d1cfcff5;
+}
+
+.contenu-demi h3{
+    margin: 15px;
+}
+
+.img-solo{
+    width: 260px;
+    height: 350px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    object-position: 52% 50%;
+}
+
+.img-double{
+    width: 260px;
+    height: 135px;
+    border-radius: 15px 15px 0 0;
+}
+
+.contenu-solo{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px #d1cfcff5;
+}
+
+.contenu-solo h3{
+    margin: 15px;
 }
