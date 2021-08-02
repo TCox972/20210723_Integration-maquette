@@ -245,7 +245,6 @@ li a{
         border-top: 2px #f2f2f2 solid;
         border-bottom: 2px #f2f2f2 solid;
         border-radius: 20px;
-        border-top-width: ;
     }
 
     #icone-map{
@@ -745,6 +744,8 @@ La premiere instruction permet l'inversion du aside et de l'article */
     width: 260px;
     height: 135px;
     border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    object-position: center;
 }
 
 .contenu-solo{
@@ -756,4 +757,54 @@ La premiere instruction permet l'inversion du aside et de l'article */
 
 .contenu-solo h3{
     margin: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    #activites{
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    
+    #resultats-activites{
+        padding: 0 30px 0 30px;
+    }
+
+    #resultats-activites h1{
+        margin-bottom: 30px;
+    }
+    
+    #contenus{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-solo{
+        height: 185px;
+        width: 100%;
+        object-position: 50% 15%;
+    }
+
+    .img-double{
+        height: 185px;
+        width: 100%;
+        object-position: center;
+    }
+
+    #contenus h3{
+        font-size: 1.4em;
+        font-weight: 600;
+        margin: 25px;
+    }
+
+    .contenu-demi{
+        margin-bottom: 30px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .contenu-solo{
+        margin-bottom: 30px;
+        text-decoration: none;
+        color: black;
+    }
 }
