@@ -20,14 +20,8 @@ h1{
 section{
     width: 92%;
     margin: auto;
+    max-width : 1210px;
 }
-
-@media screen and (max-width:768px) {
-    section{
-        width: 100%;
-    }
-}
-
 
             /*Mise en forme du Header*/
 
@@ -80,95 +74,13 @@ li a{
 }
 
 
-            /* Mise en page du header pour les mobiles */
-
-@media screen and (max-width : 768px) {
-   
-    header{
-        width: 100%;
-    }
-
-    #header{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: auto;
-      margin: 0;
-      padding: 0;
-  }
-
-    #header img{
-      margin: 25px 0 0 20px;
-      height: 65px;
-  }
-
-  nav{
-      width: 100%;
-      margin-top: 22px;
-  }
-
-  nav ul{
-      width: 100%;
-      height: 50px;
-      padding: 0;
-  }
-
-  nav li{
-      width: 100%;
-      height: 50px;
-      border-bottom: 4px #f2f2f2 solid;
-  }
-
-  nav li:hover{
-    border-bottom: 4px #0065fc solid;
-  }
-
-  .menu{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-      padding: 8px 0 0 0;
-      margin: 0;
-      font-size: 1.3em;
-  }
-
-  .menu:hover{
-      border-top: none;
-  }
-
-
-  #inscrire{
-      position: absolute;
-      width: auto;
-      top : 50px;
-      right: 0px;
-      font-size: 1.4em;
-      border-bottom: none;
-      
-  }
-
-  #inscrire a{
-      color: #0065fc;
-  }
-}
-
-
             /* Mise en forme de la fonction Recherche*/
-
-@media screen and (max-width : 768px) {
-    #recherches{
-        width: 90%;
-        margin: auto;
-    }
-}
 
 
 #recherches p{
     font-size: 0.9em;
     margin-top: 0;
 }
-
 
 #barre-recherche{
     display: flex;
@@ -227,70 +139,6 @@ li a{
 }
 
 
-            /* Mise en forme de la section Recherche - mobile */
-
-@media screen and (max-width : 768px) {
-
-    h1{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1.8em;
-        font-weight: bold;
-        margin-top: 33px;
-    }
-
-    #recherches p{
-        font-size: 1.3em;
-        margin-top: 20px;
-    }
-
-    #barre-recherche{
-        display: flex;
-        justify-content:  center;
-        align-self: center;
-        margin-top: 50px;
-        margin-right: auto;
-        margin-left: auto;
-        height: 64px;
-        width: 368px;
-        border-top: 2px #f2f2f2 solid;
-        border-bottom: 2px #f2f2f2 solid;
-        border-radius: 20px;
-    }
-
-    #icone-map{
-        display: none;
-    }
-
-    #grande-icone-map{
-        display: unset;
-        background-color: #f2f2f2;
-        border-top-left-radius: 14px;
-        border-bottom-left-radius: 14px;
-        padding: 23px 23px 21px 23px;
-    }
-
-    #bouton-rechercher{
-        display: none;
-    }
-
-    #icone-rechercher{
-        display: unset;
-        background-color: #0065fc;
-        color: white;
-        padding: 26px 24px 22px 24px;
-        border-radius: 20px;
-
-    }
-
-    #zone-recherche{
-        width: 216px;
-        height: 58px;
-        font-size: 1.4em;
-    }
-}
-
-
             /* Mise en forme de la zone filtre */
 
 #zone-filtres{
@@ -304,8 +152,6 @@ h2{
     font-size: 1em;
     font-weight: 600;
 }
-
-
 
 .filtres{
     border: 2px #f2f2f2 solid;
@@ -339,43 +185,6 @@ h2{
     border-radius: 30px;
 }
 
-
-            /* Mise en forme de la zone filtre - mobile */
-
-@media screen and (max-width : 768px) {
-    #zone-filtres{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    h2{
-        font-size: 1.5em;
-        font-weight: 700;
-    }
-
-    #filtres{
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 0;
-    }
-
-    .filtres{
-        margin-bottom: 20px;
-        height: 60px;
-        border: 3px #f2f2f2 solid;
-        font-size: 1.4em;
-        border-radius: 40px;
-        border-left: none;
-        padding-right: 23px;
-    }
-
-    .filtres i{
-        padding: 22px;
-        border-radius: 40px;
-    }
-}
-
             /* Mise en forme de la phrase d'infos */
 
 #infos{
@@ -402,36 +211,6 @@ h2{
     display: none;
 }
 
-
-            /* Mise en forme de la phrase d'infos */
-
-@media screen and (max-width : 768px){
-    #infos{
-        position: relative;
-        padding-top: 6px;
-        margin-top: 20px;
-        margin-bottom: 40px;
-    }
-
-    #infos p{
-        margin-left: 50px;
-    }
-
-    #icone-info{
-        display: none;
-    }
-
-    #icone-infoxl{
-        display: unset;
-        position: absolute;
-        color: #0065fc;
-        border: 2px #f2f2f2 solid;
-        padding: 7px 11px 7px 11px;
-        border-radius: 200px;
-        top: 0px;
-        left: 5px;
-    }
-}
 
             /* Mise en forme de la section Hébergements */
 
@@ -594,118 +373,6 @@ aside{
     padding-right: 1px;
 }
 
-
-/* Mise en forme du Aside mobile
-La premiere instruction permet l'inversion du aside et de l'article */
-
-@media screen and (max-width : 768px) {
-    #hebergements{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    aside{
-        border-radius: 0;
-        padding-bottom: 25px;
-    }
-
-    #titre-populaire{
-        margin-top: 6px;
-        margin-bottom: 15px;
-    }
-
-    #courbe{
-        font-size: 2em;
-        margin-top: 20px;
-    }
-
-    .logement-populaire{
-        width: 98%;
-        height: 175px;
-        display: flex;
-        align-items: center;
-        padding: 6px;
-        margin-bottom: 20px;
-    }
-
-    .carte-populaire{
-    width: 37%;
-    height: 100%;
-    border-radius: 13px 0 0 13px;
-    object-fit: cover;
-    object-position: 50% 50%;
-    }
-
-    .description-populaire{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .logement-populaire h3{
-        font-size: 1.4em;
-    }
-
-    .logement-populaire p{
-        font-size: 1.1em;
-    }
-
-    .logement-populaire i{
-        font-size: 1.2em;
-        padding-top: 20px;
-    }
-}
-
-/* Mise en forme de l'article Hebergements */
-
-@media screen and (max-width : 768px) {
-    #resultats-recherches{
-        background-color: white;
-    }
-
-    .titre-hebergement{
-        margin-bottom: 30px;
-    }
-
-    .rangee-resultat{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0;
-        margin-top: 0;
-        justify-content: space-between;
-    }
-
-    .logement{
-        margin-bottom: 20px;
-        height: 250px;
-        padding: 6px;
-    }
-
-    .carte-img{
-        width: 100%;
-        height: 150px;
-
-    }
-
-    .logement h3{
-        font-size: 1.4em;
-    }
-
-    .logement p{
-        font-size: 1.1em;
-    }
-
-    .logement i{
-        font-size: 1.3em;
-        padding-top: 10px;
-    }
-
-    #plus{
-        font-size: 1.5em;
-        font-weight: 700;
-    }
-}
-
 /* Mise en forme de la section Activités */
 
 #activites{
@@ -774,10 +441,349 @@ La premiere instruction permet l'inversion du aside et de l'article */
 .contenu-solo h3{
     margin: 15px;
 }
-/* Mise en forme de la section Activités pour mobile */
 
+/* Mise en forme du footer */
 
-@media screen and (max-width: 768px) {
+footer{
+    background-color: #f2f2f2;
+}
+
+#footer{
+    padding: 30px 0 50px 0px;
+    display: flex;
+    justify-content: flex-start;
+    width: 92%;
+    margin: auto;
+    max-width: 1210px;
+}
+
+.titre-footer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 220px;
+}
+
+.titre-footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+@media screen and (max-width:1100px) {
+   
+    /* Généralités */
+
+    section{
+        width: 100%;
+    }
+    
+    /* Header */
+
+    header{
+        width: 100%;
+    }
+
+    #header{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: auto;
+      margin: 0;
+      padding: 0;
+  }
+
+    #header img{
+      margin: 25px 0 0 20px;
+      height: 65px;
+  }
+
+    nav{
+      width: 100%;
+      margin-top: 22px;
+    }
+
+    nav ul{
+      width: 100%;
+      height: 50px;
+      padding: 0;
+    }
+
+    nav li{
+      width: 100%;
+      height: 50px;
+      border-bottom: 4px #f2f2f2 solid;
+    }
+
+    nav li:hover{
+        border-bottom: 4px #0065fc solid;
+    }
+
+    .menu{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding: 8px 0 0 0;
+      margin: 0;
+      font-size: 1.3em;
+    }
+
+    .menu:hover{
+      border-top: none;
+    }
+
+    #inscrire{
+      position: absolute;
+      width: auto;
+      top : 50px;
+      right: 0px;
+      font-size: 1.4em;
+      border-bottom: none;   
+    }
+
+    #inscrire a{
+      color: #0065fc;
+    }
+
+    /* Section recherches */
+
+    #recherches{
+        width: 90%;
+        margin: auto;
+    }
+
+    h1{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-top: 33px;
+    }
+
+    #recherches p{
+        font-size: 1.3em;
+        margin-top: 20px;
+    }
+
+    #barre-recherche{
+        display: flex;
+        justify-content:  center;
+        align-self: center;
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 64px;
+        width: 340px;
+        border-top: 2px #f2f2f2 solid;
+        border-bottom: 2px #f2f2f2 solid;
+        border-radius: 20px;
+    }
+
+    #icone-map{
+        display: none;
+    }
+
+    #grande-icone-map{
+        display: unset;
+        background-color: #f2f2f2;
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px;
+        padding: 23px 23px 21px 23px;
+    }
+
+    #bouton-rechercher{
+        display: none;
+    }
+
+    #icone-rechercher{
+        display: unset;
+        background-color: #0065fc;
+        color: white;
+        padding: 26px 24px 22px 24px;
+        border-radius: 20px;
+
+    }
+
+    #zone-recherche{
+        width: 188px;
+        height: 58px;
+        font-size: 1.4em;
+    }
+
+    /* Zone filtres */
+
+    #zone-filtres{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h2{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    #filtres{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+
+    .filtres{
+        margin-bottom: 20px;
+        height: 60px;
+        border: 3px #f2f2f2 solid;
+        font-size: 1.4em;
+        border-radius: 40px;
+        border-left: none;
+        padding-right: 23px;
+    }
+
+    .filtres i{
+        padding: 22px;
+        border-radius: 40px;
+    }
+
+    /* Phrase d'infos */
+
+    #infos{
+        position: relative;
+        padding-top: 6px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    #infos p{
+        margin-left: 50px;
+    }
+
+    #icone-info{
+        display: none;
+    }
+
+    #icone-infoxl{
+        display: unset;
+        position: absolute;
+        color: #0065fc;
+        border: 2px #f2f2f2 solid;
+        padding: 7px 11px 7px 11px;
+        border-radius: 200px;
+        top: 0px;
+        left: 5px;
+    }
+
+    /* Mise en forme du Aside mobile
+    La premiere instruction permet l'inversion du aside et de l'article */
+
+    #hebergements{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    aside{
+        border-radius: 0;
+        padding-bottom: 25px;
+    }
+
+    #titre-populaire{
+        margin-top: 6px;
+        margin-bottom: 15px;
+    }
+
+    #courbe{
+        font-size: 2em;
+        margin-top: 20px;
+    }
+
+    .logement-populaire{
+        width: 98%;
+        height: 175px;
+        display: flex;
+        align-items: center;
+        padding: 6px;
+        margin-bottom: 20px;
+    }
+
+    .carte-populaire{
+    width: 37%;
+    height: 100%;
+    border-radius: 13px 0 0 13px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    }
+
+    .description-populaire{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logement-populaire h3{
+        font-size: 1.4em;
+    }
+
+    .logement-populaire p{
+        font-size: 1.1em;
+    }
+
+    .logement-populaire i{
+        font-size: 1.2em;
+        padding-top: 20px;
+    }
+
+    /* Mise en forme de l'article Hebergements */
+
+    #resultats-recherches{
+        background-color: white;
+    }
+
+    .titre-hebergement{
+        margin-bottom: 30px;
+    }
+
+    .rangee-resultat{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-top: 0;
+        justify-content: space-between;
+    }
+
+    .logement{
+        margin-bottom: 20px;
+        height: 250px;
+        padding: 6px;
+    }
+
+    .carte-img{
+        width: 100%;
+        height: 150px;
+
+    }
+
+    .logement h3{
+        font-size: 1.4em;
+    }
+
+    .logement p{
+        font-size: 1.1em;
+    }
+
+    .logement i{
+        font-size: 1.3em;
+        padding-top: 10px;
+    }
+
+    #plus{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    /* Mise en forme de la section Activités pour mobile */
+
     #activites{
         margin-top: 0;
         margin-bottom: 40px;
@@ -820,35 +826,11 @@ La premiere instruction permet l'inversion du aside et de l'article */
 
     .contenu-solo{
         margin-bottom: 30px;
-    }
-}
+    }    
 
-/* Mise en forme du footer */
+    /* Footer */
 
-footer{
-    background-color: #f2f2f2;
-    padding: 30px 0 50px 50px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.titre-footer{
-    display: flex;
-    flex-direction: column;
-    margin-right: 220px;
-}
-
-.titre-footer a{
-    text-decoration: none;
-    color: black;
-    font-size: 0.9em;
-    font-weight: 300;
-    margin-top: 5px;
-    margin-bottom: 7px;
-}
-
-@media screen and (max-width : 768px) {
-    footer{
+    #footer{
         display: flex;
         flex-direction: column;
         padding: 30px 0 30px 40px;
@@ -864,3 +846,26 @@ footer{
         margin-bottom: 13px;
     }
 }
+
+@media screen and (min-width : 1100px) and (max-width : 1210px) {
+    #hebergements{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #colonne-populaire{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+
+    .logement-populaire{
+        margin-right: 10px;
+    }
+
+    aside{
+        margin-bottom: 30px;
+    }
+}
+
