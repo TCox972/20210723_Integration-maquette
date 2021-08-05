@@ -415,18 +415,42 @@ aside{
 
 .img-solo{
     width: 260px;
-    height: 350px;
+    height: 335px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
     object-position: 52% 50%;
 }
 
-.img-double{
+#img-1{
     width: 260px;
-    height: 135px;
+    height: 155px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
-    object-position: center;
+    object-position: 50% 40%;
+}
+
+#img-2{
+    width: 260px;
+    height: 95px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    object-position: 50% 15%;
+}
+
+#img-3{
+    width: 260px;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    object-position: 50% 0%;
+}
+
+#img-4{
+    width: 260px;
+    height: 130px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    object-position: 50% 10%;
 }
 
 .contenu-solo{
@@ -802,17 +826,12 @@ footer{
         flex-direction: column;
     }
 
-    .img-solo{
+    .img-solo, #img-1, #img-2, #img-3, #img-4{
         height: 185px;
         width: 100%;
-        object-position: 50% 15%;
+        object-position: 50% 45%;
     }
 
-    .img-double{
-        height: 185px;
-        width: 100%;
-        object-position: center;
-    }
 
     #contenus h3{
         font-size: 1.4em;
