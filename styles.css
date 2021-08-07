@@ -294,7 +294,7 @@ h3{
     border-radius: 18px;
     padding: 4px;
     margin-right: 30px;
-    box-shadow: 1px 1px 8px rgb(172, 169, 169);
+    box-shadow: 1px 1px 8px lightgray;
     
 }
 
@@ -306,7 +306,7 @@ aside{
     flex-direction: column;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 15px 30px 1px 30px;
+    padding: 15px 30px 0px 30px;
 }
 
 #titre-populaire{
@@ -334,7 +334,7 @@ aside{
     padding: 4px;
     border-radius: 18px;
     margin-bottom: 25px;
-    box-shadow: 1px 1px 8px rgb(172, 169, 169);
+    box-shadow: 1px 1px 8px lightgray;
 }
 
 .carte-populaire{
@@ -404,7 +404,7 @@ aside{
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    box-shadow: 1px 2px 5px #d1cfcff5;
+    box-shadow: 1px 2px 5px lightgray;
     text-decoration: none;
     color: black;
 }
@@ -457,7 +457,7 @@ aside{
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    box-shadow: 1px 2px 5px #d1cfcff5;
+    box-shadow: 1px 2px 5px lightgray;
     text-decoration: none;
     color: black;
 }
@@ -762,6 +762,7 @@ footer{
 
     #resultats-recherches{
         background-color: white;
+        padding-right: 30px;
     }
 
     .titre-hebergement{
@@ -780,6 +781,7 @@ footer{
         margin-bottom: 20px;
         height: 250px;
         padding: 6px;
+        margin-right: 0;
     }
 
     .carte-img{
@@ -853,6 +855,7 @@ footer{
         display: flex;
         flex-direction: column;
         padding: 30px 0 30px 40px;
+        width: auto;
     }
 
     .titre-footer{
